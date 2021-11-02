@@ -1,0 +1,11 @@
+#!/bin/bash
+
+case $USER in
+
+rich | barbara)
+	echo "Hello $USER!";;
+testing)
+	echo "Special testing account.";;
+*)
+	echo "Not allowed here.";;
+esac

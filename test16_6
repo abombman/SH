@@ -1,0 +1,17 @@
+#!/bin/bash
+#Getting just one charactor of input
+
+read -n 1 -p 'Are you sure [Y/N]? ' answer
+echo
+
+if [ Y = $answer ] || [ y = $answer ]; then
+	echo "fine, continue on ..."
+	echo
+elif [ N = $answer ] || [ n = $answer ]; then
+	echo "Okey, bye"
+	echo
+else 
+	echo "What's your mean?"
+fi
+
+

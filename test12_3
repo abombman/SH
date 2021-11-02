@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if grep abombman /etc/passwd; then
+	echo "The name was found."
+fi

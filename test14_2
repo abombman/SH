@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Original para"
+echo $0
+echo $#
+echo $*
+echo $@
+
+set -- $( getopt -q ab:cd $@ )
+
+echo "Standard para"
+echo $0
+echo $#
+echo $*
+echo $@

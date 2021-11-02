@@ -1,0 +1,13 @@
+#!/bin/bash
+
+name=$( basename $0 )
+
+if [ "addem" = $name ]; then
+	total=$[ $1 + $2 ]
+
+elif [ "multem" = $name ]; then
+	total=$[ $1 * $2 ]
+fi
+echo
+echo "The caculated value is $total"
+	

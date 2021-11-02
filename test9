@@ -1,0 +1,5 @@
+#!/bin/bash
+
+var1=$(echo "scale=4;3.14159/3" | bc)
+echo "The answer is $var1"
+

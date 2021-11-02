@@ -1,0 +1,9 @@
+#!/bin/bash
+
+file=testfile
+
+for content in $(cat $file); do
+	echo "listing $content"
+done
+
+

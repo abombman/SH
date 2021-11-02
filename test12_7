@@ -1,0 +1,11 @@
+#!/bin/bash
+
+testuser=abombman
+if [ $USER != $testuser ]; then
+	echo "Hello!"
+elif [ -n $testuser ];then
+	echo "Welcome."
+
+fi
+
+

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+name=$( basename $0 )
+echo "$name"
+echo
+
+while getopts :ab:cd opt; do
+	case $opt in
+		a) echo "Found -a option";;
+		b) echo "Found -b option"
+		   echo "Also found argument : $OPTARG";;
+		c) echo "Found -c option";;
+		d) echo "Found -d option";;
+		*) echo "Unknow option : $opt";;
+	esac
+done
+
+shift $[ $OPTIND -1 ]
+
+echo
+
+count=1
+for param in $@; do
+	echo "Parameter $count : $param"
+	count=$[ $count + 1 ]
+done
+
