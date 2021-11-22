@@ -1,0 +1,12 @@
+#!/bin/bash
+#test while condition
+count=0
+while [ 0 ]
+do
+	if [ $count -gt 5 ]; then
+		break
+	fi
+	echo $count
+	sleep 1
+	count=$[ $count + 1 ]
+done

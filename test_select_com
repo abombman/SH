@@ -1,0 +1,34 @@
+#!/bin/bash
+
+diskspace()
+{
+	clear
+	df -hk
+}
+
+whoseon()
+{
+	clear
+	who
+}
+
+memusage()
+{
+	clear
+	cat /proc/meminfo
+}
+
+PS3="Enter option: "
+select option in "Display disk space" "Display logged on users" "Display memory usage" "Exit program"
+do
+	case $option in
+	"Display disk space")
+		diskspace;;
+	"Display logged on users")
+		whoseon;;
+	"Display memory usage")
+		memusage;;
+	"Exit program")
+		break;;
+	esac
+done
