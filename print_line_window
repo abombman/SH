@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sed '{ :start $q ; N ; 6,$D ; b start }' $1
+

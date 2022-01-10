@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ $1 -gt 0 ]; then
+
+	count=1
+
+	while [ $count -le $1 ]; do
+		echo "This is line $count">>data7.txt
+		count=$[ $count + 1 ]
+	done
+fi
+
+ 
